@@ -1,0 +1,31 @@
+.dossier-header-container {
+    height: 200vh;
+    width: 100%;
+    /* background-color: #ADD3D2; */
+    background-color: #4C2D51;
+    opacity: 45%;
+}
+
+.background-box {
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-secret-header {
+    height: 100vh;
+    border-box: box-sizing;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #e3ddd1;
+    padding: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    margin-top: 50px;
+    font-weight: 900;
+  }
