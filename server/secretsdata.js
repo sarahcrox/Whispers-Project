@@ -243,3 +243,7 @@ text: "I've been using the same half-typed Word document to pretend I'm doing wo
 // }
 
 ]
+
+module.exports = {
+    secrets
+}
