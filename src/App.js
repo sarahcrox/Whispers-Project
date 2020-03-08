@@ -23,11 +23,15 @@ componentDidMount(){
 }
 
   render(){
-    
+    let secretsMapped = this.state.secrets.map(secret => {
+      // console.log(secret)
+      return <div key={secret.id}>{secret.title}</div>
+    })
     return(
       <div className="App">
         <Header />
         <div className="section-container">
+        {secretsMapped}
         
           <div className="grey-body-container">
           </div>

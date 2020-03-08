@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inconsolata&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital@1&family=Roboto&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,7 +53,7 @@ table {
 }
 
 header {
-  height: 425px;
+  height: 175px;
   border-box: box-sizing;
   display: flex;
   justify-content: center;
@@ -67,10 +69,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 25vh;
 }
 .grey-body-container {
   background: #414853;
-  height: .001vh;
+  height: .1vh;
   width: 100vw;
   flex-direction: column;
   display: flex;
@@ -82,28 +85,28 @@ header {
 }
 .white-input-section {
   background-color: white;
-  height: 30px;
+  height: 25px;
   width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .your-secret-here-1 {
   width: 250px;
-  height: 20px;
+  height: 25px;
   border-radius: 5px;
   border-style: none;
   background-color: #F9F9F9;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* position: fixed;
   top: 300px; */
 }
 button {
   width: 75px;
-  height: 18px;
+  height: 23px;
   border-radius: 5px;
   border-style: none;
   font-weight: 700;
@@ -111,6 +114,40 @@ button {
   /* background-color: #FFE7DC; */
   background-color: #E8D6D4;
   /* background-color: #C98679; */
+}
+
+.secret-container {
+  height: 220px;
+  width: 220px;
+  margin: 4px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  opacity: 1;
+}
+
+.disappear {
+  opacity: 0;
+}
+
+.lipsList-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secret-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Gentium Basic', serif;
+  color: #252626
 }
 
 

@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/api/secrets', (req, res) => {
+    // console.log(secretsData)
     return res.status(200).send(secretsData.secrets)
 })
 

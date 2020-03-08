@@ -233,15 +233,6 @@ text: "Whenever there's awkward pause in conversation with someone I don't reall
 text: "I've been using the same half-typed Word document to pretend I'm doing work for years now and no one's noticed"
 },
 
-
-// {id: ,
-// text: 
-// },
-
-// {id: 57,
-// text: 
-// }
-
 ]
 
 module.exports = {

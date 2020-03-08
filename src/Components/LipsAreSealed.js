@@ -1,76 +1,54 @@
 import React, {Component} from 'react'
+import axios from 'axios'
 import Reveal from './Reveal'
-// import axios from '.axios'
 
 class LipsAreSealed extends Component {
     constructor(){
         super();
         this.state = {
-            hiddenSecrets: ''
+            hiddenSecrets: [],
+            randoms: []
         }
-//         this.componentDidMount = this.componentDidMount.bind(this)
     }
+    componentDidMount(){
 
-//     componentDidMount(){
-//         // axios.get('/api/hiddenSecrets')
-//             .then(res => {
-//                 this.setState({
-//                     hiddenSecrets: res.data
-//                 })
-//             })
-    // }
+        let randoms = []
+        while(randoms.length < 3){
+            let num = Math.floor(Math.random() * 56) + 1;
+            if(randoms.indexOf(num)){
+                randoms.push(num);
+            }
+        }
+
+        this.setState({
+            randoms
+        })
+
+        axios.get('/api/secrets').then(res => {
+          this.setState({
+            hiddenSecrets: res.data
+          })
+        })
+      }
 
     render(){
+        
+        // console.log(randoms)
+        let threeSecrets = this.state.hiddenSecrets.filter(secrets => {
+            return this.state.randoms.includes(secrets.id)
+        })
+        let threeSecretsDisplay = threeSecrets.map(secret => {
+            // console.log(secret)
+            return <Reveal key={secret.id} secret={secret}/>
+        })
+        // console.log(threeSecretsDisplay)
         return(
-            <img src="assets/IMG_1209.PNG" alt= 'Lips' height='220px'/>
+            <div className="lipsList-container">
+                {threeSecretsDisplay}
+            </div>
         )
     }
 }
 
 export default LipsAreSealed
 
-// // import React, { Component } from 'react'
-// // import Grass from './Grass'
-// // import axios from 'axios'
-
-// import Pokemon from './Pokemon';
-
-// // class Finder extends Component {
-// //     constructor(){
-// //         super();
-// //         this.state={
-// //             wildPokemon: []
-// // //         }
-// //         this.componentDidMount = this.componentDidMount.bind(this)
-// //     }
-
-//     // componentDidMount(){
-//     //     axios.get('/api/wild-pokemon')
-//     //         .then(res => {
-//     //             this.setState({
-//     //                 wildPokemon: res.data
-//     //             })
-//     //         })
-//     // }
-
-
-//     render() {
-//         const pokemonList = this.state.wildPokemon.map(element => {
-//             return <Grass 
-//                         key={element.id}
-//                         pokemon={element}
-//                         catchPokemon={this.props.catchPokemon}
-//                         refreshFn={this.componentDidMount}
-//                     />
-//         })
-//         return (
-//             <div className='finder-box'>
-//                 {pokemonList}
-//             </div>
-//         )
-//     }
-// }
-
-// export default Finder
-
-// // Get-Random Pokemon
