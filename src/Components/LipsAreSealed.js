@@ -32,6 +32,11 @@ class LipsAreSealed extends Component {
         })
       }
 
+      handleAdd = (event) => {
+          console.log(event.target.value)
+        // this.props.addTopSecrets()
+      }
+
     render(){
         
         // console.log(randoms)
@@ -40,11 +45,18 @@ class LipsAreSealed extends Component {
         })
         let threeSecretsDisplay = threeSecrets.map(secret => {
             // console.log(secret)
-            return <Reveal key={secret.id} secret={secret}/>
+            return <Reveal 
+            key={secret.id} 
+            secret={secret}
+            addTopSecret={this.props.addTopSecret}
+            
+            />
         })
-        // console.log(threeSecretsDisplay)
+        console.log(threeSecretsDisplay)
         return(
-            <div className="lipsList-container">
+            <div className="lipsList-container"
+            onClick={e =>this.handleAdd(e)}
+            >
                 {threeSecretsDisplay}
             </div>
         )

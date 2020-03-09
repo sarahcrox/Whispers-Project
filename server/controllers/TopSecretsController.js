@@ -1,4 +1,4 @@
-const TOPSECRETS = [{text: 'Test', id: 78}, {text: 'Test', id: 79}]
+const TOPSECRETS = []
 let id=57
 
 module.exports = {

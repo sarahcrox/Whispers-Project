@@ -12,7 +12,7 @@ class App extends Component{
     this.state={
       secrets: []
     }
-    this.addTopSecrets = this.addTopSecrets.bind(this)
+    this.addTopSecret = this.addTopSecret.bind(this)
     this.savedSecret = this.savedSecret.bind(this)
     this.deleteTopSecret = this.deleteTopSecret.bind(this)
   }
@@ -25,8 +25,8 @@ componentDidMount(){
     })
   })
 }
-addTopSecrets(secret){
-  axios.post('/api/top-secrets', {secret})
+addTopSecret(secrets){
+  axios.post('/api/top-secrets', {secrets})
   .then(res => {
     this.setState({
       secrets: res.data
@@ -69,7 +69,7 @@ deleteTopSecret(id){
           </div>
         </div>
         <LipsAreSealed 
-
+          addTopSecret={this.addTopSecret}
           onClick={this.componentDidMount}
         />
           <div className="grey-body-container">
