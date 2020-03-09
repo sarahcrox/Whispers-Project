@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inconsolata&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
@@ -95,7 +92,7 @@ header {
 }
 .your-secret-here-1 {
   width: 250px;
-  height: 25px;
+  height: 45px;
   border-radius: 5px;
   border-style: none;
   background-color: #F9F9F9;
@@ -104,7 +101,7 @@ header {
   /* position: fixed;
   top: 300px; */
 }
-button {
+.your-secret-here-2 {
   width: 75px;
   height: 23px;
   border-radius: 5px;

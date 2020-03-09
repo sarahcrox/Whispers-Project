@@ -11,11 +11,39 @@ class App extends Component{
     super();
     this.state={
       secrets: []
-    };
+    }
+    this.addTopSecrets = this.addTopSecrets.bind(this)
+    this.savedSecret = this.savedSecret.bind(this)
+    this.deleteTopSecret = this.deleteTopSecret.bind(this)
   }
 
 componentDidMount(){
-  axios.get('/api/secrets').then(res => {
+  axios.get('/api/top-secrets').then(res => {
+    console.log(res.data)
+    this.setState({
+      secrets: res.data
+    })
+  })
+}
+addTopSecrets(secret){
+  axios.post('/api/top-secrets', {secret})
+  .then(res => {
+    this.setState({
+      secrets: res.data
+    })
+  })
+}
+savedSecret(id, newSecret){
+  axios.put(`/api/top-secrets/${id}`, {secrets: newSecret})
+  .then(res =>{
+    this.setState({
+      secrets: res.data
+    })
+  })
+}
+deleteTopSecret(id){
+  axios.delete(`/api/top-secrets/${id}`)
+  .then(res =>{
     this.setState({
       secrets: res.data
     })
@@ -36,14 +64,21 @@ componentDidMount(){
           <div className="grey-body-container">
           </div>
           <div className="white-input-section">
-            <input className='your-secret-here-1' placeholder= "             What's your deepest, darkest secret?"/>
+            <input className='your-secret-here-1' placeholder= "             What's your secret?"/>
             <button className='your-secret-here-2'>Tell Me</button>
           </div>
         </div>
-        <LipsAreSealed />
+        <LipsAreSealed 
+
+          onClick={this.componentDidMount}
+        />
           <div className="grey-body-container">
           </div>
-        <Dossier />
+        <Dossier 
+         savedSecret={this.savedSecret}
+         deleteTopSecret={this.deleteTopSecret}
+         secrets={this.state.secrets}
+         />
         <div className="secret-answers">
         </div>
       </div>

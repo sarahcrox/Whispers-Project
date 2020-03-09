@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Dancing+Script&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 .dossier-header-container {
     height: 200vh;
     width: 100%;
@@ -17,7 +65,7 @@
   }
 
   .top-secret-header {
-    height: 100vh;
+    height: 15vh;
     border-box: box-sizing;
     display: flex;
     justify-content: center;
@@ -29,3 +77,56 @@
     margin-top: 50px;
     font-weight: 900;
   }
+  .secrets-container {
+    background-color: #f6f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:  #363431;
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+  }
+  .secrets-list {
+    margin-left: 200px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.buttons-to-edit {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.delete-button {
+  width: 65px;
+  height: 23px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 700;
+  font-family: 'Homemade Apple', cursive;
+  /* background-color: #FFE7DC; */
+  background-color: #E8D6D4;
+  /* background-color: #C98679; */
+  display: flex;
+  justify-content: center;
+}
+
+.edit-button {
+  width: 65px;
+  height: 23px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 700;
+  font-family: 'Homemade Apple', cursive;
+  /* background-color: #FFE7DC; */
+  background-color: #E8D6D4;
+  /* background-color: #C98679; */
+  display: flex;
+  justify-content: center;
+}

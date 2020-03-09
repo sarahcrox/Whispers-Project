@@ -52,7 +52,7 @@ text: "When I'm in the car I pretend I'm in a music video to whatever song is on
 },
 
 {id: 14,
-text: "The only way I eat M&M's is by separating them by color and eating them from my least favorite color to my favorite."
+text: "When I’m driving and I see the person behind me switch lanes & speed up, I do the same so they can’t go in front of me."
 },
 
 {id: 15,
@@ -84,11 +84,11 @@ text: "I can't snap my fingers, so when I want/need to snap, I make the snapping
 },
 
 {id: 22,
-text: "When I am in my vegetable garden I love to pretend I am a queen and my plants are my subjects. \"My kingdom for a tomato\"."
+text: "If someone sneezes around me I hold my breath for like 15 seconds till all of their germs disperse in the air away from me."
 },
 
 {id: 23,
-text: "When getting bananas I can't tear them apart. It's like they're family."
+text: "All doors and closets in the room gotta be completely shut when Im sleeping.."
 },
 
 {id: 24,
@@ -108,11 +108,11 @@ text: "When I walk through automatic sliding doors, I wave my hand so I can pret
 },
 
 {id: 28,
-text: "I've got 99 problems and 86 of them are made up scenarios in my head that will never play out."
+text: "I'm scared to use a flashlight at night because I feel that it's going to land on some weird monster/humanoid creature thingy and that's how I will die."
 },
 
 {id: 29,
-text: "Whenever I go for a sh*t I always say 'The power of sphincter expells you!' Anyone else say random things on the toilet?"
+text: "If I’m home alone & I vacuum or play loud music, I pause it very frequently to make sure I don’t hear anyone breaking in."
 },
 
 {id: 30,
@@ -132,15 +132,15 @@ text: "I cannot leave my bed. The blankets have accepted me as one of their own.
 },
 
 {id: 34,
-text: "I change sec to sex when I text and blame it on autocorrect to put the thought in his head."
+text: "I have the weirdest impulses sometimes like if I’m holding someone’s baby I’m like what if threw it out the window."
 },
 
 {id: 35,
-text: "The only time anyone gets away with telling me what to do is when I'm at work or when I'm naked."
+text: "I had no idea sitcoms were taped in front of live studio audiences.  So When I used to watch shows & heard people laughing, I thought it was the rest of the whole world at home watching & laughing into their tvs, so I used to laugh x-tra hard right into the speakers."
 },
 
 {id: 36,
-text: "Half of my friends are getting married and pregnant, while the other half are too drunk to find their phones."
+text: "I do personal bets with myself like if I’m about to throw something in the trash I say \“ok if I make this me and my gf will get married one day\”."
 },
 
 {id: 37,
@@ -152,7 +152,7 @@ text: "It is my life goal to open a milkshake shop and name it \"The Yard\"."
 },
 
 {id: 39,
-text: "My favorite mythical creature is the happy bitch from the tampon commercials."
+text: "If I knock/scrape one foot on the floor by accident I have to even it out and knock/scrape the other foot otherwise I feel uneven."
 },
 
 
@@ -172,7 +172,7 @@ text: "I steal the posh tea bags from my hotel rooms and take a good handful fro
 
 
 {id: 43,
-text: "Sometimes I simba the sh*t out of my pets."
+text: "I hate my roommate so I brushed my dog's hair with his toothbrush and put it back."
 },
 
 
@@ -222,7 +222,7 @@ text: "I pour two packets of sugar in a soda before drinking it."
 },
 
 {id: 54,
-text: "It took me 20 minutes to type this."
+text: "When I was 12 my dog got away from me & was shot by a farmer. I'm 26 now. His sheep graze on the road and I refuse to slow down for them. I've hit 3 so far."
 },
 
 {id: 55,
