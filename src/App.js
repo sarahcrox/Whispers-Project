@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Components/Header';
 import LipsAreSealed from './Components/LipsAreSealed'
 import Dossier from './Components/Dossier'
+
 import './App.css';
 
 import axios from 'axios'
@@ -13,7 +14,7 @@ class App extends Component{
       secrets: []
     }
     this.addTopSecret = this.addTopSecret.bind(this)
-    this.savedSecret = this.savedSecret.bind(this)
+    this.editTopSecret = this.editTopSecret.bind(this)
     this.deleteTopSecret = this.deleteTopSecret.bind(this)
   }
 
@@ -33,7 +34,7 @@ addTopSecret(secrets){
     })
   })
 }
-savedSecret(id, newSecret){
+editTopSecret(id, newSecret){
   axios.put(`/api/top-secrets/${id}`, {secrets: newSecret})
   .then(res =>{
     this.setState({
@@ -75,7 +76,7 @@ deleteTopSecret(id){
           <div className="grey-body-container">
           </div>
         <Dossier 
-         savedSecret={this.savedSecret}
+         editTopSecret={this.editTopSecret}
          deleteTopSecret={this.deleteTopSecret}
          secrets={this.state.secrets}
          />

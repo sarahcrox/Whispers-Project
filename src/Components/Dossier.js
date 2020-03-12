@@ -1,28 +1,25 @@
 import React, {Component} from 'react';
 import './Dossier.css';
+import Secret from './Secret';
 
 
 class Dossier extends Component{
     constructor(props){
         super(props);
         this.state = {
+            updateSecret: '',
+            isEditing: false
         }
     }
-
-
-
     render(){
         console.log(this.props.secrets)
         const secret = this.props.secrets.map(secret => {
-            return <div key= {secret.id}>
-                <p>{secret.text}</p>
-                <button onClick={()=> this.props.deleteTopSecret(secret.id)} className="delete-button">Delete</button>
-                <button 
-                onClick={()=> this.props.editTopSecrets(secret.id)} 
-                className="edit-button"
-                >Edit</button>
-            </div>})
-            
+            return <Secret
+                    secret = {secret}
+                    deleteTopSecret = {this.props.deleteTopSecret}
+                    editTopSecret = {this.props.editTopSecret}
+                    />
+        });
             
         return(
             <div>
@@ -32,9 +29,6 @@ class Dossier extends Component{
                     </div>
                         <div className="secrets-container">
                             <p className="secrets-list">{secret}</p>
-                            <div className="buttons-to-edit">
-                               
-                            </div>
                         </div>  
                 </section>
             </div>

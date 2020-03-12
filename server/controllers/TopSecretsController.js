@@ -17,7 +17,8 @@ module.exports = {
         const {id} = req.params
         const {secrets} = req.body
         const index = TOPSECRETS.findIndex(element => element.id === +id)
-        TOPSECRETS[index].secrets = secrets
+        console.log(index)
+        TOPSECRETS[index].text = secrets.text
         res.status(200).send(TOPSECRETS)
     },
     deleteTopSecret: (req, res) => {

@@ -130,3 +130,25 @@ table {
   display: flex;
   justify-content: center;
 }
+.submit-button {
+  width: 65px;
+  height: 23px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 700;
+  font-family: 'Homemade Apple', cursive;
+  /* background-color: #FFE7DC; */
+  background-color: #E8D6D4;
+  /* background-color: #C98679; */
+  display: flex;
+  justify-content: center;
+}
+.input-box {
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 500px;
+  height: 30px;
+  font-family:  'Homemade Apple', cursive;
+  font-weight: 500;
+  border-style: none;
+}
